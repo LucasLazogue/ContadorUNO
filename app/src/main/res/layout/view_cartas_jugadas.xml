@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imagencitaCartita"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:src="@drawable/redzero"
+        android:background="@android:color/transparent"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="4dp">
+    </ImageView>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="#FFFFFF"
+    android:foregroundTint="@color/black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/nombreReglaExistente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginHorizontal="8dp"
+            android:ellipsize="end"
+            android:maxLines="1">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/juego"
+                android:layout_marginVertical="4dp"
+                android:layout_marginLeft="8dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tipoJuegotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/optionsRegla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_more_vert"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end">
+    </ImageView>
+
+
+</androidx.cardview.widget.CardView>

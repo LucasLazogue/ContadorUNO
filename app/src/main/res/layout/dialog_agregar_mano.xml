@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleAgregarManoDialog"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:textStyle="bold"
+        android:textColor="#000000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/helpAgregarManoNoIndividual"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="8dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/spinner_label"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/spinnerJugadoresEnJuego"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cancelarMano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancelar"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_cancel_finalizar">
+        </Button>
+
+        <Button
+            android:id="@+id/aceptarMano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aceptar"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_confirm_finalizar">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

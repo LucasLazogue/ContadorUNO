@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="80"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/nombreResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Nombre Jugador">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/puntosGrid">
+            </TextView>
+
+            <TextView
+                android:id="@+id/puntosResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/medalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first_place"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/posicionResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="4°"
+            android:visibility="gone">
+        </TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

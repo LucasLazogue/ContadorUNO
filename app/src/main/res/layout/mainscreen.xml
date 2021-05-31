@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_above="@+id/adView"
+        android:weightSum="9">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:text="@string/continuarPartida"
+            android:id="@+id/continuarPartida"
+            android:background="@drawable/gradient_cargar"
+            android:textColor="#FFFFFF"
+            android:visibility="gone">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:text="@string/nuevaPartida"
+            android:id="@+id/newGame"
+            android:background="@drawable/gradient_newgame"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:text="@string/cargarPartida"
+            android:id="@+id/cargarPartida"
+            android:background="@drawable/gradient_moral"
+            android:textColor="#FFFFFF"
+            android:visibility="gone">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:text="@string/valoresPersonalizados"
+            android:id="@+id/crearReglas"
+            android:background="@drawable/gradient_reglas"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/jugadores"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:text="@string/jugadores"
+            android:background="@drawable/gradient_red"
+            android:textColor="#FFFFFF">
+        </Button>
+
+        <Button
+            android:id="@+id/historial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:text="@string/historial"
+            android:background="@drawable/gradient_historial"
+            android:textColor="#FFFFFF"
+            android:visibility="gone">
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

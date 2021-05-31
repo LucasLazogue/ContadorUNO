@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleAgregarPuntosManualDialog"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:textStyle="bold"
+        android:textColor="#000000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/helpAgregarPuntosManualDialog"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="8dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/puntajeAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="30dp"
+        android:hint="@string/hintEditAgregarPuntajeManualDialog"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxLength="9">
+    </EditText>
+
+    <Button
+        android:id="@+id/confirmarPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/confirmar"
+        android:background="@drawable/button_confirm_dialog">
+    </Button>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+package com.contadoruno.UnoScoreHelper.Logica.Interfaces;
+
+import com.contadoruno.UnoScoreHelper.Logica.Datatypes.DataJugador;
+import com.contadoruno.UnoScoreHelper.Logica.Datatypes.DataPartida;
+import com.contadoruno.UnoScoreHelper.Logica.Datatypes.DataRegla;
+import com.contadoruno.UnoScoreHelper.Logica.Exceptions.ErrorAlCrearPartida;
+import com.contadoruno.UnoScoreHelper.Logica.Exceptions.PuntajeVacio;
+import com.contadoruno.UnoScoreHelper.Logica.Exceptions.ReglaNula;
+import com.contadoruno.UnoScoreHelper.Logica.Exceptions.TamanoJugadores;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public interface IPartidaController {
+  public abstract void crearPartida(String regla, String[] jugadores, String puntaje, Boolean puntuarIndividual, Boolean flip) throws ErrorAlCrearPartida, PuntajeVacio, TamanoJugadores, ReglaNula;
+  public abstract DataPartida getDatosPartida(int index);
+  public abstract String getGanadorPartida(int index);
+  public abstract void setGanadorPartida(int index, String nombre);
+  public abstract DataRegla getRegla(int index);
+  public abstract DataJugador getDatosJugador(int index, String jugador);
+  public abstract void agregarMano(int index, String jugador, List<String> cartas);
+  public abstract void agregarMano(int index, String jugador, int puntaje);
+  public abstract void agregarMano(int index, String jugador, List<String> cartas, String jugadorAPuntuar);
+  public abstract void agregarMano(int index, String jugador,int puntaje, String jugadorAPuntuar);
+  public abstract void agregarMano(int index, String jugador,int puntaje, Boolean ayuda);
+  public abstract int getUltimaPartida();
+  public abstract DataPartida[] listarPartidas();
+  public abstract String getMayorPuntuado(int index);
+  public abstract String getMenorPuntuado(int index);
+  public abstract Boolean hayEmpate(int index);
+  public abstract Boolean noHayEmpatadosMinimos(int id);
+  public abstract List<String> getEmpatados(int index);
+  public abstract List<Integer> getPartidasFinalizadas(String tipoJuego);
+  public abstract List<Integer> getPartidasEnCurso(String tipoJuego);
+  public abstract void finalizarPartida(int index, Boolean ganador);
+  public abstract Boolean hayPartidasFinalizadas();
+  public abstract Boolean hayPartidasEnCurso();
+  public abstract Boolean hayPartidaCargada();
+  public abstract int getUltimaPartidaCargada();
+  public abstract void marcarPartidaCargada(int index);
+  public abstract Boolean hayGanador(int index);
+  public abstract int valorCartas(int index, List<String> cartas);
+  public abstract void editarMano(int id, String nombreJugador, List<String> seleccionadas, int posMano);
+  public abstract void editarMano(int id, String nombreJugador,int puntaje, int posMano);
+  public abstract void editarMano(int id, String nombreJugador, List<String> seleccionadas, int posMano, Boolean ayuda);
+  public abstract void editarMano(int id, String nombreJugador, int puntaje, int posMano, Boolean ayuda);
+  public abstract void borrarMano(int id, int posMano);
+  public abstract void reiniciarPartida(int id);
+  public abstract void borrarPartida(int index);
+  public abstract List<String> listarNoEliminados(int index);
+  public abstract List<String> listarEliminados(int index);
+  public abstract Map<Integer, String> getPosiciones(int index);
+  public abstract List<String>  getTodasPosiciones(int index);
+  public abstract void ordenarPosiciones(int index);
+  public abstract String getUltimoEliminado(int index);
+  public abstract Map<Integer, ArrayList<DataJugador>> getEmpatadosTotales(int index);
+  public abstract void sortearEmpatados(int index);
+  public abstract List<DataJugador> getJugadores(int index);
+  public abstract List<String> getJugadoresMano(int index, int numeroMano);
+  public abstract void sumarRonda(int id);
+  public abstract int getRondas(int id);
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaManos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreJugadorEnPartida" />
+
+    <TextView
+        android:id="@+id/nombreJugadorEnPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <View
+        android:id="@+id/linita"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/listaManos"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/listaManos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaManos" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/puntosGrid"
+        app:layout_constraintEnd_toStartOf="@+id/txtPuntos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linita" />
+
+    <TextView
+        android:id="@+id/txtPuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/linita" />
+
+    <ImageView
+        android:id="@+id/crucecita"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPuntos"
+        app:layout_constraintEnd_toEndOf="@+id/listaManos"
+        app:layout_constraintStart_toStartOf="@+id/listaManos"
+        app:layout_constraintTop_toTopOf="@+id/nombreJugadorEnPartida"
+        app:srcCompat="@drawable/jugador_eliminado"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/posicion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="1°"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linita"
+        app:layout_constraintEnd_toEndOf="@+id/listaManos"
+        app:layout_constraintStart_toStartOf="@+id/listaManos"
+        app:layout_constraintTop_toTopOf="@+id/nombreJugadorEnPartida"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.contadoruno.UnoScoreHelper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.contadoruno.UnoScoreHelper.App.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:screenOrientation="portrait">
+
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.EditarManoTotal"></activity>
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.Resultado" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.EditarRegla" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.Jugadores" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.EditarMano" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.Historial" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.Reglas" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.PuntuarMano" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.NuevaMano" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.VistaDetalleJugadorPartida" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.CartasJugadas" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.NuevaRegla" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.PartidaEnJuego" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.SeleccionarReglas" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.AddJugador" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.NuevaPartida" />
+        <activity android:name="com.contadoruno.UnoScoreHelper.Estacion.Activities.MainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

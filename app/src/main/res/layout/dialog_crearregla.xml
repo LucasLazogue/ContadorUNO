@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleCrearReglaDialog"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:textStyle="bold"
+        android:textColor="#000000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/helpCrearReglaDialog"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="8dp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radioTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/unoClassic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/unoClassic">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/unoFlip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/unoFlip">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/nombreReglaNueva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:hint="@string/hintEditNombreReglaDialog"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        android:maxLines="1">
+    </EditText>
+
+    <Button
+        android:id="@+id/confirmRegla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/aceptar"
+        android:background="@drawable/button_confirm_dialog">
+    </Button>
+
+
+</LinearLayout>
